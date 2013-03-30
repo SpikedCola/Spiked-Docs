@@ -169,6 +169,44 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
     "DMAId":[
        530
     ],
+    "PostProcessedData":{
+       "LocalEventRangeStart":"2013-07-10T00:00:00-05:00",
+       "LocalEventDate":"2013-07-10T09:00:00-05:00",
+       "MEV":3,
+       "SuppressWireless":true,
+       "onsale_status":"1",
+       "Onsales":{
+          "unmodified_epdate":null,
+          "expire":"Tue, 04/30/13<br>09:59 PM",
+          "onsales":[
+             {
+                "suppress":0,
+                "onsale_type":"1",
+                "interval":{
+                   "end":"Sun, 07/14/13<br>12:00 AM",
+                   "start":"Sat, 12/01/12<br>10:00 AM"
+                }
+             },
+             {
+                "suppress":0,
+                "onsale_type":"2",
+                "interval":{
+                   "end":"Tue, 04/30/13<br>09:59 PM",
+                   "start":"Sat, 03/16/13<br>11:00 AM"
+                }
+             }
+          ],
+          "event_date":{
+             "event_date_type":6,
+             "date":"Wed, 07/10/13<br>09:00 AM",
+             "date_range":{
+                "end":"Sun, 07/14/13<br>12:00 AM",
+                "start":"Wed, 07/10/13<br>12:00 AM"
+             },
+             "suppress_time":0
+          }
+       }
+    },
     "AttractionId":[
        "874376",
        "1784064",
@@ -342,44 +380,6 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
        "/dbimages/97343a.jpg",
        "/dbimages/134435a.jpg"
     ],
-    "PostProcessedData":{
-       "LocalEventRangeStart":"2013-07-10T00:00:00-05:00",
-       "LocalEventDate":"2013-07-10T09:00:00-05:00",
-       "MEV":3,
-       "SuppressWireless":true,
-       "onsale_status":"1",
-       "Onsales":{
-          "unmodified_epdate":null,
-          "expire":"Tue, 04/30/13<br>09:59 PM",
-          "onsales":[
-             {
-                "suppress":0,
-                "onsale_type":"1",
-                "interval":{
-                   "end":"Sun, 07/14/13<br>12:00 AM",
-                   "start":"Sat, 12/01/12<br>10:00 AM"
-                }
-             },
-             {
-                "suppress":0,
-                "onsale_type":"2",
-                "interval":{
-                   "end":"Tue, 04/30/13<br>09:59 PM",
-                   "start":"Sat, 03/16/13<br>11:00 AM"
-                }
-             }
-          ],
-          "event_date":{
-             "event_date_type":6,
-             "date":"Wed, 07/10/13<br>09:00 AM",
-             "date_range":{
-                "end":"Sun, 07/14/13<br>12:00 AM",
-                "start":"Wed, 07/10/13<br>12:00 AM"
-             },
-             "suppress_time":0
-          }
-       }
-    },
     "AttractionSEOLink":[
        "/Winnipeg-Folk-Festival-tickets/artist/874376",
        "/A-Tribe-Called-Red-tickets/artist/1784064",
