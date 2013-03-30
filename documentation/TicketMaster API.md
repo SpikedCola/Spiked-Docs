@@ -1,6 +1,6 @@
 # The TicketMaster API
 ## Contents
-* [General Response Format](#general-response-format)
+* [General Information](#general-information)
   * [Request](#request)
   * [Response](#response)
   	  * [Response JSON](#response-json)
@@ -13,7 +13,7 @@
             * [Event Fields](#event-fields)
             * [Event Notes](#event-notes)
 
-## General Response Format
+## General Information
 Here we will look at a general request to the TicketMaster API, and the response we get back.
 
 ## Request
@@ -53,7 +53,7 @@ The response from TicketMaster's API is a JSON object with the following structu
 	* **int** `QTime` - Probably the time to execute the query (I think `0` means cached)
 * **object** `response` 
 	* **obj** `facet_counts` - Not sure
-	* **int** `numFound` - Number of docs in response
+	* **int** `numFound` - Number of `docs` in response
 	* **array** `docs` - Response documents (events, etc)
 	* **int** `start` - Probably the starting document for pagination, only seen `0`
 * **int** `fromJetson` - Not sure, usually `1`  
@@ -71,7 +71,7 @@ endpoints accept a single query parameter (ex. you can't specify a venue AND art
 *(Note: Events returned for an `aid` search could contain other artists as well - the search is not exclusive)*
 
 ### Event Response 
-*Note: This structure describes an item (`doc`) in the `docs` array [above](#general-response-format).*  
+*Note: This structure describes an item (a `doc`) in the `docs` array [above](#general-information).*  
 *Other Note: I've reorganized the response in order to better group the returned fields.*
 
 This event actually happens to make an excellent example of "typical" TicketMaster data. Pay attention 
