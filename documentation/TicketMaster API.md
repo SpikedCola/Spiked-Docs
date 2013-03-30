@@ -148,18 +148,6 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
        "All Music",
        "Country and Folk"
     ],
-    "PresaleName":[
-       "Early Bird Presale",
-       "Early Bird Presale"
-    ],
-    "PresaleOff":[
-       "2012-12-28T02:00:00Z",
-       "2013-05-01T02:59:00Z"
-    ],
-    "PresaleOn":[
-       "2012-12-01T17:00:00Z",
-       "2013-03-16T16:00:00Z"
-    ],
     "PromoterId":[
        "320"
     ],
@@ -168,6 +156,18 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
     ],
     "DMAId":[
        530
+    ],
+    "PresaleName":[
+       "Early Bird Presale",
+       "Early Bird Presale"
+    ],
+    "PresaleOn":[
+       "2012-12-01T17:00:00Z",
+       "2013-03-16T16:00:00Z"
+    ],
+    "PresaleOff":[
+       "2012-12-28T02:00:00Z",
+       "2013-05-01T02:59:00Z"
     ],
     "PostProcessedData":{
        "LocalEventRangeStart":"2013-07-10T00:00:00-05:00",
@@ -455,6 +455,10 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
     * `EventNotes`
     * `EventType`
     * `EventStatus`
+	* `EventRangeStart`
+	* `EventInternetRelease`
+	* `EventRangeEnd`
+	* `EventDate`
 * `StarReviewCount`
 * `Stars`
 * `Timezone`
@@ -474,7 +478,61 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
     * `VenueCity`
     * `VenueState`
     * `VenueCityState`
-* ``
+	* `VenuePostalCode`
+* `VenueCountry`
+* `VenueLatLong`
+* `VenueImage`
+* `VenueSEOLink`
+* `timestamp`
+* `SearchableUntil`
+* `OnsaleOn`
+* `OnsaleOff`
+* `ExpirationDate`
+* `ActOverride`
+* `SuppressBestAvailAll`
+* `SingleEPDate`
+* `Host`
+* `PurchaseDomain`
+* `MajorGenre`
+* `MajorGenreId`
+* `MinorGenre`
+* `MinorGenreId`
+* `Genre`
+* `MusicBrowseGenre`
+* `PromoterId`
+* `MarketId`
+* `DMAId`
+* `PresaleName`
+* `PresaleOn`
+* `PresaleOff`
+* `PostProcessedData`
+	* `LocalEventRangeStart`
+	* `LocalEventDate`
+	* `MEV`
+	* `SuppressWireless`
+	* `onsale_status`
+	* `Onsales`
+		* `unmodified_epdate`
+		* `expire`
+		* `onsales`
+			* `suppress`
+			* `onsale_type`
+			* `interval`
+				* `end`
+				* `start`
+	* `event_date`
+		* `event_date_type`
+		* `date`
+		* `date_range`
+			* `end`
+			* `start`
+		* `suppress_time`
+* `Attraction<...>`
+	* `AttractionId`
+	* `AttractionName`
+	* `AttractionImage`
+	* `AttractionSEOLink`
+* `search-en`
 
 #### Event Notes
 * Quite a few fields seem extraneous and unnecessary (`LocalEventWeekdayString`, `LocalEventShortWeekday`, `LocalEventDay`, etc.), but are probably included so that some display
