@@ -494,9 +494,9 @@ to things like `null` `AttractionIds`, empty `AttractionNames` and `AttractionIm
 * `Host`
 * `PurchaseDomain`
 * `MajorGenre`
-* `MajorGenreId`
+* `MajorGenreId` - An array with a single genre ID
 * `MinorGenre`
-* `MinorGenreId`
+* `MinorGenreId` - An array with a single genre ID
 * `Genre`
 * `MusicBrowseGenre`
 * `PromoterId`
@@ -540,3 +540,5 @@ logic somewhere can just use the data directly.
 * TicketMaster has started being very kind lately by providing `VenueLatLong` for us! No need to (sometimes unreliably) geocode venue addresses any more.
 * Nearly any field can be `null`/empty/missing - there is very little consistency in TicketMaster's
 data - so plan your code accordingly
+* Images are hosted at `http://media.ticketmaster.com` - simply append the image path to this URL
+* A larger version of most images is available at `path/{image id - 1}.jpg`. For example, if `/dbimages/68819a.jpg` is the path to a small image, `/dbimages/68818a.jpg` is the path to a large version of the same image.
